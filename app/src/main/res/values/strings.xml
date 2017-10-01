@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">NEBRAS APPS</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">البريد الالكتروني</string>
+    <string name="prompt_password">الرقم السري </string>
+    <string name="action_sign_in">دخول</string>
+    <string name="action_create_acnt">تسجبل حساب جديد</string>
+    <string name="action_sign_up">تسجيل</string>
+
+    <string name="error_invalid_email">البريد غير صحيح</string>
+    <string name="error_invalid_password">الرقم السري غير صالح</string>
+    <string name="user_exist">البريد مستخدم مسبقا</string>
+    <string name="invalid_user">البريد او الرقم غير صحيح</string>
+    <string name="error_field_required">الحقل ضروري</string>
+
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="logout">هل أنت متأكد من الخروج؟</string>
+    <string name="welcome_msg">Welcome to Nebras Apps</string>
+
+    <string name="camera">الكاميرا</string>
+    <string name="record">تسجيل الصوت</string>
+    <string name="write_msg">رسالة</string>
+    <string name="message">الرسالة</string>
+    <string name="save">حفظ</string>
+    <string name="cancel">إلغاء</string>
+    <string name="website">www.nebrasapps.com</string>
+
+</resources>

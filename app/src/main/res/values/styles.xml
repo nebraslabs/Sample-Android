@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchWidth" parent="Match">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="txt_style" parent="Wrap">
+        <item name="android:layout_gravity">center|center_vertical</item>
+        <item name="android:padding">@dimen/d4</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="header_title" parent="MatchWidth">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:padding">@dimen/d16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center|center_vertical</item>
+
+        <item name="android:textSize">@dimen/fontSizeMedium</item>
+    </style>
+    <style name="left_header_title" parent="MatchWidth">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center|center_vertical</item>
+        <item name="android:padding">@dimen/d14</item>
+        <item name="android:textSize">@dimen/d18</item>
+    </style>
+    <style name="updateedtstyle" parent="MatchWidth">
+        <item name="android:background">@drawable/edittext_corner</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/d12</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:drawablePadding">@dimen/d10</item>
+        <item name="android:paddingLeft">@dimen/d16</item>
+        <item name="android:paddingTop">@dimen/d12</item>
+        <item name="android:paddingRight">@dimen/d10</item>
+        <item name="android:paddingBottom">@dimen/d12</item>
+    </style>
+    <style name="btn_style" parent="Match">
+        <item name="android:layout_gravity">center|center_vertical</item>
+        <item name="android:textColor">@color/white_clr</item>
+        <item name="android:padding">@dimen/d10</item>
+    </style>
+</resources>

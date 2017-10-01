@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/d30"
+    android:background="@android:color/transparent"
+    android:gravity="center|center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_rounded_corner"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_vertical"
+                android:padding="@dimen/d10"
+                android:text="@string/write_msg"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/fontSizeMedium" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/write_msg_rounded_crnr"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/forgot_pwd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/d20"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/message"
+                    style="@style/updateedtstyle"
+                    android:hint="@string/message"
+                    android:gravity="right"
+                    android:inputType="text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d26"
+                    android:gravity="center|center_vertical"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/send_btn"
+                        style="@style/btn_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/btn_rounded_corner"
+                        android:text="@string/save" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

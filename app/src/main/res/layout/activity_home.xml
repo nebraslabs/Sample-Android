@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_clr"
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background" />
+
+    <RelativeLayout
+        android:id="@+id/top_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d60">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d60"
+            android:alpha="0.4"
+            android:background="@color/colorPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d2"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/d10"
+            android:src="@drawable/log_out" />
+
+        <ImageView
+            android:id="@+id/logo_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/d10"
+            android:src="@drawable/logo_header" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_lay"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header"
+            style="@style/header_title"
+            android:text="@string/welcome_msg" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"
+            android:layout_marginBottom="@dimen/d50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_vertical"
+                android:layout_margin="@dimen/d36"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/camera"
+                    style="@style/left_header_title"
+                    android:background="@drawable/box_corner"
+                    android:text="@string/camera" />
+
+                <LinearLayout
+                    android:id="@+id/img_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d10"
+                    android:background="@drawable/lay_border"
+                    android:orientation="vertical"
+                    android:padding="@dimen/d10"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/selected_img"
+                        android:layout_width="@dimen/d180"
+                        android:layout_height="@dimen/d100"
+                        android:layout_gravity="center|center_vertical" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d6"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/cancelimg"
+                            style="@style/left_header_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/d10"
+                            android:background="@drawable/cancel_border"
+                            android:text="@string/cancel"
+                            android:textColor="@color/white_clr" />
+                        <Button
+                            android:id="@+id/saveimg"
+                            style="@style/left_header_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d10"
+                            android:background="@drawable/save_border"
+                            android:text="@string/save"
+                            android:textColor="@color/white_clr" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/record"
+                    style="@style/left_header_title"
+                    android:layout_marginTop="@dimen/d16"
+                    android:background="@drawable/box_corner"
+                    android:text="@string/record" />
+
+                <LinearLayout
+                    android:id="@+id/audio_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d10"
+                    android:background="@drawable/lay_border"
+                    android:orientation="vertical"
+                    android:padding="@dimen/d10"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/play"
+                        android:layout_width="@dimen/d180"
+                        android:layout_height="@dimen/d100"
+                        android:layout_gravity="center|center_vertical"
+                        android:src="@drawable/play" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d6"
+                        android:gravity="center|center_vertical"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/cancelaudio"
+                            style="@style/left_header_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/d10"
+                            android:background="@drawable/cancel_border"
+                            android:text="@string/cancel"
+                            android:textColor="@color/white_clr" />
+                        <Button
+                            android:id="@+id/saveaudio"
+                            style="@style/left_header_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d10"
+                            android:background="@drawable/save_border"
+                            android:text="@string/save"
+                            android:textColor="@color/white_clr" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/write_msg"
+                    style="@style/left_header_title"
+                    android:layout_marginTop="@dimen/d16"
+                    android:background="@drawable/box_corner"
+                    android:text="@string/write_msg" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/website"
+            style="@style/header_title"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/website"
+            android:textSize="@dimen/d20" />
+    </RelativeLayout>
+</RelativeLayout>
